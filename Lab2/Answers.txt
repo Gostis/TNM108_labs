@@ -1,0 +1,23 @@
+Part 1:
+    1: You can use linear regression when you wnat to see if you have any linear relationships in your data or if you want to see a trend in the data from a line or plane or hyperplane.
+    2: We can generalize it by fitting lines, planes and hyperplanes.
+    3: Basis functions are functions that transform the data with nonlinear relationships and adapt linear regression.
+    4: Infinite, but it won't yeild a good result. That is why you use regularization.
+    5: Overfitting can absolutely be a problem espically. Overfitting happens when basis functions overlap and the coeicients of the adjecent basis funtions cancels each other out. What we can do about it is to use regularization and penalize when a to high dimensional basis is used.
+
+Part 2:
+    1: It is important to choose a good K value beacuase it is the controlling parameter of the prediction model.
+    2: You can choose a good k value depending on what is important for your data. If you use a low value noise will have an higher impact. If you choose a high 
+       value the algorithm will be very computationally heavy. The best way to know what k-value you should use try different values or try the Elbow method.
+    3: Yes that is possible.
+    4: KNN is sensible to the number of features and works best with lower amount of features. If you use a high amount this may lead to overfitting.
+    5: Yes that is possible.
+    6: Pros: Fast compared to other classifiction algorithms. No need to train for generalsation. The predicted new value is calculated by the k average neighbours.
+       Cons: Testing phase is slow and costly. Requiers a large amount of memory for storing the entire dataset. Not suitable for large dimension dataset.
+
+Part 3:
+    1: The basic idea of SVM is that it is a discriminative classifier that divides the data. Instead of just drawing lines between the data it does so with margins and it tries to maximize the margin between the two sets of data and by doing so choosing the optimal line to draw between the data. One of its strenghts is its insensitvity to distant points.
+    2: If the data is non linearly seperable we can use kernel transformation and the kernel trick to not make it so computationally heavy. You do this by the use of basis functions. In the example we used a radial one.
+    3: The concecpt behind soften margins is when you have data that overlaps you cannot use perfect lines between them and therfor have to allow some points to creep into the margin. The margin is controlled by a variable called C. For smaller c values we let some points lie in the margin.
+    4: Pros: Take up little memory. Once the model have been trained the prediction phase is very fast. Works well with high dimensional data that other algorithms have a hard time with. Very versitile with the help of kernels.
+       Cons: Does not scale well with number of samples. The result strongly depend on the variable C. Which must be carefully choosen through cross validation.

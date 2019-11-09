@@ -74,9 +74,10 @@ print(correct/len(X))
 
 # 2. Can you find a parameter configuration to get a validation score greater than 62% ?
 # No, the values either became lower or the same with both different features and parameters
+
 # 3. What are the advantages/disadvantages of K-Means clustering?
 # The advantages with K-Means clustering is that it is realtvly easy to implement, its scales good with large data sets. It can easily adapt to new examples. Fast and efficient in term of computational cost. The results of it are easy to interpret.
 #
 # The disadvantages with k-means clustering is that the number of clusters are an input variable. Its sensitve to outliers. Has troubles with clustering data of different size and density. It can give different results depending on the order of the data.
 # 4. How can you address the weaknesses?
-# We can address it weaknesses by using it on datasets where you know the amount of clusters that is needed. We can remove outliers before we run the algorithm so that they corrupt the clusters. If the data has differnt size and density see to that you try to scale it in a certain intervall as all the other data in the dataset.
+# We can address it weaknesses by using it on datasets where you know the amount of clusters that is needed. We can remove outliers before we run the algorithm so that they dont corrupt the clusters. If the data has differnt size and density see to that you try to scale it in a certain intervall as all the other data in the dataset.
